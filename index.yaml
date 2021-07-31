@@ -1,0 +1,112 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.289.3
+    created: "2021-07-31T15:50:32.49363444Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: 5cb1d4682a6b4315740176f0f71111c2374210346418c47afdbb7470f56c94d0
+    home: https://github.com/bitnami/charts/tree/master/bitnami/jenkins
+    icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb6-helm-charts/jenkins-8.0.8.tgz
+    version: 8.0.8
+  solr:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 8.9.0
+    created: "2021-07-31T15:50:32.500880451Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Apache Solr is an open source enterprise search platform
+    digest: 0ca8f0abe51e599103a218fc080fa976d7ca58d00cfa966d0486ba92e05678a5
+    home: https://github.com/bitnami/charts/tree/master/bitnami/solr
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-110x117.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: solr
+    sources:
+    - https://github.com/bitnami/bitnami-docker-solr
+    - https://lucene.apache.org/solr/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb6-helm-charts/solr-1.0.5.tgz
+    version: 1.0.5
+  wordpress:
+  - annotations:
+      category: CMS
+    apiVersion: v2
+    appVersion: 5.8.0
+    created: "2021-07-31T15:50:32.517830954Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Web publishing platform for building blogs and websites.
+    digest: 7bcd9f6445002d886ffbd83c76b16336f01e60b7f0c0031eb411402c26190915
+    home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    - https://wordpress.org/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb6-helm-charts/wordpress-12.0.0.tgz
+    version: 12.0.0
+generated: "2021-07-31T15:50:32.487684871Z"
